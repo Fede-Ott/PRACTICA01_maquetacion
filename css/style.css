@@ -1,0 +1,26 @@
+body,
+h1,
+h5,
+p {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+    padding-top: 60px;
+  }
+
+/* Quote styles */
+.quote-mark {
+    font-size: 2rem;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .quote-content {
+    font-size: 2rem;
+    max-width: 800px;
+  }
+  
+  .quote-content p {
+    font-size: 1em;
+  }
