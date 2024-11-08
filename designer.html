@@ -28,8 +28,8 @@
     <header>
         <nav class="navbar navbar-light fixed-top">
           <!-- Logo -->
-            <a href="/Index.html">
-                <img src="/assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
+            <a href="index.html">
+                <img src="assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
             </a>
           <!-- Mobile Menu Toggle Button -->
         <button
@@ -41,11 +41,52 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <img src="./assets/icons/menu.svg" alt="Menu" width="40px" height="40px" />
+        <img src="assets/icons/menu.svg" alt="Menu" width="40px" height="40px" />
       </button>
+
 
         </nav>
     </header>
+    <!-- Main Content -->
+    <main>
+        <div class="container my-5">
+          <!-- Responsive Grid: 1 column mobile, 2 columns desktop -->
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+                <!-- Designer Cards -->
+                <!-- Each card has consistent structure:
+                 - Left col: Image or Info Box
+                 - Right col: Info Box or Image
+                 - Info Box contains name and years -->
+  
+                <!-- Alessandro Guerriero -->
+                <div class="col grid-item">
+                  <div class="row g-3 h-100">
+                        <div class="col-6 h-100">
+                            <img
+                                src="assets/images/designers/alessandro-guerriero.webp"
+                                alt="Alessandro Guerriero"
+                                class="w-100 h-100 object-fit-cover"
+                            />
+                        </div>
+                        <div class="col-6 h-100">
+                            <div class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                                style="background-color: #dfe84d">
+                                <div class="designer-info">
+                                    <h2 class="fw-bold">
+                                        Alessandro<br />
+                                        Guerriero
+                                    </h2>
+                                    <h2 class="fw-bold">1943</h2>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
 
+            </div>
+
+        </div>
+
+    </main>
 </body>
 </html>
