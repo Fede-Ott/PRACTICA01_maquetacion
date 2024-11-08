@@ -24,3 +24,23 @@ body {
   .quote-content p {
     font-size: 1em;
   }
+
+
+/* Carousel and overlay elements */
+.pattern {
+    width: 100%;
+  }
+  
+  .artist-carousel {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 20rem;
+  }
+  
+  .overlay-images {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    pointer-events: none;
+  }
+  
