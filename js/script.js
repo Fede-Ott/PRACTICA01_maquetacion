@@ -80,5 +80,43 @@ $(document).ready(function () {
         successMessage.classList.add('d-none');
       }, 5000);
     });
+
+
+
+    // CAROUSEL SLICK
+    $(".carousel-slick").slick({
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 0,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      cssEase: "linear",
+      speed: 10000,
+      responsive: [
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 2,
+            speed: 20000,
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            speed: 20000,
+          },
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            speed: 20000,
+          },
+        },
+      ],
+    });
   });
   

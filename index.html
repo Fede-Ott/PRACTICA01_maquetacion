@@ -25,26 +25,74 @@
       </head>
 <body>
      <!-- Header: Navigation Bar -->
-     <header>
-        <nav class="navbar navbar-light fixed-top">
-          <!-- Logo -->
-            <a href="index.html">
-                <img src="assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
-            </a>
-          <!-- Mobile Menu Toggle Button -->
+    <header>
+      <nav class="navbar navbar-light fixed-top w-100">
+        <!-- Logo -->
+        <a href="Index.html">
+          <img src="./assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
+        </a>
+        <!-- Mobile Menu Toggle Button -->
         <button
-        class="navbar-toggler border-0 hamburger"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <img src="assets/icons/menu.svg" alt="Menu" width="40px" height="40px" />
-      </button>
-
-        </nav>
+          class="navbar-toggler border-0 hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="./assets/icons/menu.svg" alt="Menu" width="40px" height="40px" />
+        </button>
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse d-flex flex-column align-items-start p-5" id="navbarNav">
+          <!-- Close Button for Mobile -->
+          <button
+            class="btn-close d-flex align-self-end mb-5 text-white me-5"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Close"
+          >
+            <img src="./assets/icons/close-menu.svg" alt="Close" width="40px" height="40px" />
+          </button>
+          <!-- Navigation Links -->
+          <ul class="navbar-nav align-items-start">
+            <!-- Progetti Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white text-uppercase dropdown-toggle no-droparrow"
+                id="progettiDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <h1>Progetti</h1>
+              </a>
+              <ul class="dropdown-menu bg-transparent" aria-labelledby="progettiDropdown">
+                <li>
+                  <a class="nav-link text-white text-uppercase" href="progetti.html#design">Design</a>
+                </li>
+                <li><a class="nav-link text-white text-uppercase" href="progetti.html#disegni">Disegni</a></li>
+                <li>
+                  <a class="nav-link text-white text-uppercase" href="progetti.html#allestimenti">Allestimenti</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Designer Link -->
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="designer.html">
+                <h1>Designer</h1>
+              </a>
+            </li>
+            <!-- Storia Link -->
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="storia.html">
+                <h1>Storia</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
@@ -72,82 +120,61 @@
         </section>
 
          <!-- Pattern Divider -->
-      <img src="assets/images/pattern1.png" alt="Pattern 1" class="pattern" />
+      <img src="./assets/images/pattern1.webp" alt="Pattern 1" class="pattern" />
       <!-- Designer Section with Carousel -->
       <section
         class="vh-100 mt-5 position-relative d-flex flex-column justify-content-end align-items-center mobile-temple"
       >
         <img
-          src="assets/images/arco-alchimia.webp"
-          class="position-absolute w-100 h-100 d-none d-md-block arco-alchimia"
+          src="./assets/images/arco-alchimia.webp"
+          class="position-absolute w-100 h-100 d-none d-xl-block arco-alchimia"
           style="bottom: 0"
         />
-        <h2 class="text-white text-uppercase d-md-none text-end w-100" style="margin-right: 5rem">Designer</h2>
         <div class="artist-carousel">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
+          <h2 class="text-white text-uppercase d-xl-none text-end w-100" style="margin-right: 5rem">Designer</h2>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/images/164-536x354.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./assets/images/164-536x354.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-xl-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="assets/images/21-536x354.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./assets/images/21-536x354.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-xl-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="assets/images/467-536x354.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="./assets/images/467-536x354.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-xl-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-controls d-flex justify-content-center w-100 mt-4">
+              <button
+                class="carousel-control-prev position-relative"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span class="text-black fs-3" aria-hidden="true">←</span>
+              </button>
+
+              <button
+                class="carousel-control-next position-relative"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span class="text-black fs-3" aria-hidden="true">→</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -166,18 +193,124 @@
               il paradossale.
             </p>
           </div>
-
-
-          
-        <!-- Bootstrap Dependencies -->
-        <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
-
-          <!-- Custom Scripts -->
-            <script defer src="js/script.js"></script>
+          <img src="./assets/icons/close-mark.svg" alt="Close Mark" width="40px" height="40px" class="align-self-end" />
+          <!-- Author -->
+          <h5 class="text-white text-uppercase align-self-start">A. Guerriero, 1976</h5>
+        </div>
+      </section>
+      <!-- Pattern Divider -->
+      <img src="./assets/images/pattern3.webp" alt="Pattern 3" class="pattern" />
+      <!-- Gallery Section -->
+      <section class="vh-100 bg-white position-relative d-flex flex-column justify-content-center mobile-gallery">
+        <div class="d-flex position-absolute w-100 h-100 d-none d-xl-flex">
+          <img src="./assets/images/left-arc.webp" style="z-index: 10" />
+          <img src="./assets/images/middle-arc.webp" class="w-100" />
+          <img src="./assets/images/right-arc.webp" style="z-index: 10" />
+          <h2 class="vertical-text text-white text-uppercase">Galleria</h2>
+        </div>
+        <h2 class="text-white text-uppercase d-xl-none text-end me-3">Galleria</h2>
+        <div class="carousel-slick">
+          <div class="carousel-item item"><img src="./assets/images/21-536x354.jpg" alt="Image 2" /></div>
+          <div class="carousel-item item"><img src="./assets/images/467-536x354.jpg" alt="Image 3" /></div>
+          <div class="carousel-item item"><img src="./assets/images/164-536x354.jpg" alt="Image 1" /></div>
+          <div class="carousel-item item"><img src="./assets/images/21-536x354.jpg" alt="Image 2" /></div>
+          <div class="carousel-item item"><img src="./assets/images/467-536x354.jpg" alt="Image 3" /></div>
+        </div>
+      </section>
+      <!-- Pattern Divider -->
+      <img src="./assets/images/pattern4.webp" alt="Pattern 4" class="pattern" />
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer text-white p-5">
+      <div class="container align-items-start d-flex flex-column gap-5">
+        <!-- Contact Information -->
+        <div class="d-flex flex-column flex-md-row justify-content-between w-100" style="height: fit-content">
+          <div>
+            <h2 class="mb-3 text-start">ATELIER ALCHIMIA</h2>
+            <p class="text-start mb-0">
+              Via Monte Napoleone 12, 20121, Milano, Italy<br />
+              <a href="mailto:info@atelierdesign.it" class="text-white" style="text-decoration: none"
+                >info@atelierdesign.it</a
+              >
+              |
+              <a href="mailto:guerrieroalessandro@gmail.com" class="text-white" style="text-decoration: underline"
+                >guerrieroalessandro@gmail.com</a
+              >
+              <br />
+              <span>+39 02 12345678</span>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><img src="./assets/icons/facebook-solid.svg" width="35" height="35" /></a>
+            <a href="#"><img src="./assets/icons/instagram-solid.svg" width="35" height="35" /></a>
+          </div>
+        </div>
+        <!-- Newsletter Section -->
+        <button class="newsletter-btn text-white w-100 p-4">NEWSLETTER</button>
+        <div class="newsletter-collapse d-flex flex-column align-items-start p-5" id="newsletterNav">
+          <button class="btn-close d-flex align-self-end mb-5 text-white" id="closeNewsletter">
+            <img src="./assets/icons/close-menu.svg" alt="Close" width="40px" height="40px" />
+          </button>
+          <h2 class="text-white my-4">Newsletter</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="validationDefault01" class="form-label w-100 text-start">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter your name" />
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault02" class="form-label w-100 text-start">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="Enter your surname"
+                required
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="validationDefault03" class="form-label w-100 text-start">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="validationDefault03"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+                <label class="form-check-label w-100 text-start" for="invalidCheck2"
+                  >Agree to terms and conditions</label
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="send-btn text-white text-uppercase" type="submit">Submit form</button>
+            </div>
+          </form>
+          <div class="d-flex justify-content-center w-100">
+            <div id="successMessage" class="alert alert-success mt-3 d-none text-center">
+              La tua iscrizione è stata completata con successo!
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <p class="text-start">Tutti i diritti riservati, Copyright &copy; 2024 Atelier Alchimia</p>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="./js/Script.js"></script>
 </body>
 </html>
