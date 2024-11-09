@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alchimia - Designer</title>
     <meta
       name="description"
@@ -12,7 +12,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,16 +21,14 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<!-- Header: Navigation Bar -->
+  </head>
+  <body>
+    <!-- Header: Navigation Bar -->
     <header>
-      <nav class="navbar navbar-light fixed-top">
+      <nav class="navbar navbar-light fixed-top w-100">
         <!-- Logo -->
-        <a href="/Index.html">
-          <img src="/assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
+        <a href="index.html">
+          <img src="./assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
         </a>
         <!-- Mobile Menu Toggle Button -->
         <button
@@ -47,7 +46,7 @@
         <div class="collapse navbar-collapse d-flex flex-column align-items-start p-5" id="navbarNav">
           <!-- Close Button for Mobile -->
           <button
-            class="btn-close d-flex align-self-end mb-5 text-white"
+            class="btn-close d-flex align-self-end mb-5 text-white me-5"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -61,7 +60,6 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link text-white text-uppercase dropdown-toggle no-droparrow"
-                href="/progetti.html"
                 id="progettiDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -71,23 +69,23 @@
               </a>
               <ul class="dropdown-menu bg-transparent" aria-labelledby="progettiDropdown">
                 <li>
-                  <a class="nav-link text-white text-uppercase" href="/progetti.html#design">Design</a>
+                  <a class="nav-link text-white text-uppercase" href="progetti.html#design">Design</a>
                 </li>
-                <li><a class="nav-link text-white text-uppercase" href="/progetti.html#disegni">Disegni</a></li>
+                <li><a class="nav-link text-white text-uppercase" href="progetti.html#disegni">Disegni</a></li>
                 <li>
-                  <a class="nav-link text-white text-uppercase" href="/progetti.html#allestimenti">Allestimenti</a>
+                  <a class="nav-link text-white text-uppercase" href="progetti.html#allestimenti">Allestimenti</a>
                 </li>
               </ul>
             </li>
             <!-- Designer Link -->
             <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="/designer.html">
+              <a class="nav-link text-white text-uppercase" href="designer.html">
                 <h1>Designer</h1>
               </a>
             </li>
             <!-- Storia Link -->
             <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="/storia.html">
+              <a class="nav-link text-white text-uppercase" href="storia.html">
                 <h1>Storia</h1>
               </a>
             </li>
@@ -97,476 +95,495 @@
     </header>
     <!-- Main Content -->
     <main>
-        <div class="container my-5">
-          <!-- Responsive Grid: 1 column mobile, 2 columns desktop -->
-          <div class="row row-cols-1 row-cols-md-2 g-3">
-                <!-- Designer Cards -->
-                <!-- Each card has consistent structure:
-                 - Left col: Image or Info Box
-                 - Right col: Info Box or Image
-                 - Info Box contains name and years -->
-  
-                <!-- Alessandro Guerriero -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                        <div class="col-6 h-100">
-                            <img
-                                src="./assets/images/designers/alessandro-guerriero.webp"
-                                alt="Alessandro Guerriero"
-                                class="w-100 h-100 object-fit-cover"
-                            />
-                        </div>
-                        <div class="col-6 h-100">
-                            <div class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                                style="background-color: #dfe84d">
-                                <div class="designer-info">
-                                    <h2 class="fw-bold">
-                                        Alessandro<br />
-                                        Guerriero
-                                    </h2>
-                                    <h2 class="fw-bold">1943</h2>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-                </div>
+      <div class="container my-5">
+        <h2 class="text-uppercase text-black">Designer</h2>
+        <!-- Responsive Grid: 1 column mobile, 2 columns desktop -->
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <!-- Designer Cards -->
+          <!-- Each card has consistent structure:
+               - Left col: Image or Info Box
+               - Right col: Info Box or Image
+               - Info Box contains name and years -->
 
-                <!-- Alessandro Mendini -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/alessandro-Mendini.webp"
-                        alt="Alessandro Mendini"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #b2d0e8"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Alessandro<br />
-                            Mendini
-                          </h2>
-                          <h2 class="fw-bold">1931 - 2019</h2>
-                        </div>
-                      </div>
-                    </div>
+          <!-- Alessandro Guerriero -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/alessandro-guerriero.webp"
+                  alt="Alessandro Guerriero"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #dfe84d"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Alessandro<br />
+                      Guerriero
+                    </h2>
+                    <h2 class="fw-bold">1943</h2>
                   </div>
                 </div>
-
-                <!-- Ettore Sottsass -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #e48fb2"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Ettore<br />
-                            Sottsass
-                          </h2>
-                          <h2 class="fw-bold">1917 - 2007</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/ettore-sottsass.webp"
-                        alt="Ettore Sottsass"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Michele de Lucchi -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #2038c6"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Michele<br />
-                            de Lucchi
-                          </h2>
-                          <h2 class="fw-bold">1951</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/michele-de-lucchi.webp"
-                        alt="Michele de Lucchi"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Andrea Branzi -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/andrea-branzi.webp"
-                        alt="Andrea Branzi"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #f19f3d"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Andrea<br />
-                            Branzi
-                          </h2>
-                          <h2 class="fw-bold">1938 - 2023</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Trix, Roberto Haussmann -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/trix-robert-haussmann.webp"
-                        alt="Trix, Roberto Haussmann"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #c9332f"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Trix, Robert<br />
-                            Haussmann
-                          </h2>
-                          <div>
-                            <h2 class="fw-bold">1931</h2>
-                            <h2 class="fw-bold">1933 - 2021</h2>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Paola Navone -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #b19251"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Paola<br />
-                            Navone
-                          </h2>
-                          <h2 class="fw-bold">1950</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/paola-navone.webp"
-                        alt="Paola Navone"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Bruno Gregori -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #131a17"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Bruno<br />
-                            Gregori
-                          </h2>
-                          <h2 class="fw-bold">1954</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/bruno-gregori.webp"
-                        alt="Bruno Gregori"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Daniela Puppa -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/daniela-puppa.webp"
-                        alt="Daniela Puppa"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #7abedc"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Daniela<br />
-                            Puppa
-                          </h2>
-                          <h2 class="fw-bold">1947</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Riccardo Dalisi -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/riccardo-dalisi.webp"
-                        alt="Riccardo Dalisi"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #6fbc77"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Riccardo<br />
-                            Dalisi
-                          </h2>
-                          <h2 class="fw-bold">1947</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Franco Raggi -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #f19f3d"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Franco<br />
-                            Raggi
-                          </h2>
-                          <h2 class="fw-bold">1945</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/franco-raggi.webp"
-                        alt="Franco Raggi"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Cinzia Ruggeri -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #e48fb2"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Cinzia<br />
-                            Ruggeri
-                          </h2>
-                          <h2 class="fw-bold">1942 - 2019</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/cinzia-ruggeri.webp"
-                        alt="Cinzia Ruggeri"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Adriana Guerriero -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/adriana-guerriero.webp"
-                        alt="Adriana Guerriero"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #dfe84d"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Adriana<br />
-                            Guerriero
-                          </h2>
-                          <h2 class="fw-bold">1945</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Paolo Portoghesi -->
-                <div class="col grid-item">
-                  <div class="row g-3 h-100">
-                    <div class="col-6 h-100">
-                      <img
-                        src="./assets/images/designers/paolo-portoghesi.webp"
-                        alt="Paolo Portoghesi"
-                        class="w-100 h-100 object-fit-cover"
-                      />
-                    </div>
-                    <div class="col-6 h-100">
-                      <div
-                        class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
-                        style="background-color: #2038c6"
-                      >
-                        <div class="designer-info">
-                          <h2 class="fw-bold">
-                            Paolo<br />
-                            Portoghesi
-                          </h2>
-                          <h2 class="fw-bold">1931 - 2023</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-
+              </div>
             </div>
+          </div>
 
+          <!-- Alessandro Mendini -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/alessandro-Mendini.webp"
+                  alt="Alessandro Mendini"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #b2d0e8"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Alessandro<br />
+                      Mendini
+                    </h2>
+                    <h2 class="fw-bold">1931 - 2019</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ettore Sottsass -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #e48fb2"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Ettore<br />
+                      Sottsass
+                    </h2>
+                    <h2 class="fw-bold">1917 - 2007</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/ettore-sottsass.webp"
+                  alt="Ettore Sottsass"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Michele de Lucchi -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #2038c6"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Michele<br />
+                      de Lucchi
+                    </h2>
+                    <h2 class="fw-bold">1951</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/michele-de-lucchi.webp"
+                  alt="Michele de Lucchi"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Andrea Branzi -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/andrea-branzi.webp"
+                  alt="Andrea Branzi"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #f19f3d"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Andrea<br />
+                      Branzi
+                    </h2>
+                    <h2 class="fw-bold">1938 - 2023</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trix, Roberto Haussmann -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/trix-robert-haussmann.webp"
+                  alt="Trix, Roberto Haussmann"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #c9332f"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Trix, Robert<br />
+                      Haussmann
+                    </h2>
+                    <div>
+                      <h2 class="fw-bold">1931</h2>
+                      <h2 class="fw-bold">1933 - 2021</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paola Navone -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #b19251"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Paola<br />
+                      Navone
+                    </h2>
+                    <h2 class="fw-bold">1950</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/paola-navone.webp"
+                  alt="Paola Navone"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bruno Gregori -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #131a17"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Bruno<br />
+                      Gregori
+                    </h2>
+                    <h2 class="fw-bold">1954</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/bruno-gregori.webp"
+                  alt="Bruno Gregori"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Daniela Puppa -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/daniela-puppa.webp"
+                  alt="Daniela Puppa"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #7abedc"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Daniela<br />
+                      Puppa
+                    </h2>
+                    <h2 class="fw-bold">1947</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riccardo Dalisi -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/riccardo-dalisi.webp"
+                  alt="Riccardo Dalisi"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #6fbc77"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Riccardo<br />
+                      Dalisi
+                    </h2>
+                    <h2 class="fw-bold">1947</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Franco Raggi -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #f19f3d"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Franco<br />
+                      Raggi
+                    </h2>
+                    <h2 class="fw-bold">1945</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/franco-raggi.webp"
+                  alt="Franco Raggi"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Cinzia Ruggeri -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #e48fb2"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Cinzia<br />
+                      Ruggeri
+                    </h2>
+                    <h2 class="fw-bold">1942 - 2019</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/cinzia-ruggeri.webp"
+                  alt="Cinzia Ruggeri"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Adriana Guerriero -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/adriana-guerriero.webp"
+                  alt="Adriana Guerriero"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #dfe84d"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Adriana<br />
+                      Guerriero
+                    </h2>
+                    <h2 class="fw-bold">1945</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paolo Portoghesi -->
+          <div class="col grid-item designer-item">
+            <div class="row g-3 h-100">
+              <div class="col-6 h-100">
+                <img
+                  src="assets/images/designers/paolo-portoghesi.webp"
+                  alt="Paolo Portoghesi"
+                  class="w-100 h-100 object-fit-cover"
+                />
+              </div>
+              <div class="col-6 h-100">
+                <div
+                  class="text-white text-uppercase py-4 px-4 d-flex flex-column designer-box h-100"
+                  style="background-color: #2038c6"
+                >
+                  <div class="designer-info">
+                    <h2 class="fw-bold">
+                      Paolo<br />
+                      Portoghesi
+                    </h2>
+                    <h2 class="fw-bold">1931 - 2023</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
+      </div>
     </main>
-  <!-- Footer Section -->
-  <footer class="footer text-white p-5">
-    <div class="container align-items-start d-flex flex-column gap-5">
-      <!-- Contact Information -->
-      <div class="d-flex flex-column flex-md-row justify-content-between w-100" style="height: fit-content">
-        <div>
-          <h2 class="mb-3 text-start">ATELIER ALCHIMIA</h2>
-          <p class="text-start mb-0">
-            Via Monte Napoleone 12, 20121, Milano, Italy<br />
-            <a href="mailto:info@atelierdesign.it" class="text-white"
-              style="text-decoration: none">info@atelierdesign.it</a>
-            |
-            <a href="mailto:guerrieroalessandro@gmail.com" class="text-white"
-              style="text-decoration: underline">guerrieroalessandro@gmail.com</a>
-            <br />
-            <span>+39 02 12345678</span>
-          </p>
+    <!-- Footer Section -->
+    <footer class="footer text-white p-5">
+      <div class="container align-items-start d-flex flex-column gap-5">
+        <!-- Contact Information -->
+        <div class="d-flex flex-column flex-md-row justify-content-between w-100" style="height: fit-content">
+          <div>
+            <h2 class="mb-3 text-start">ATELIER ALCHIMIA</h2>
+            <p class="text-start mb-0">
+              Via Monte Napoleone 12, 20121, Milano, Italy<br />
+              <a href="mailto:info@atelierdesign.it" class="text-white" style="text-decoration: none"
+                >info@atelierdesign.it</a
+              >
+              |
+              <a href="mailto:guerrieroalessandro@gmail.com" class="text-white" style="text-decoration: underline"
+                >guerrieroalessandro@gmail.com</a
+              >
+              <br />
+              <span>+39 02 12345678</span>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ALCHIMIADESIGN"><img src="assets/icons/facebook-solid.svg" width="35" height="35" /></a>
+            <a href="https://www.instagram.com/alessandroguerriero_alchimia/"><img src="assets/icons/instagram-solid.svg" width="35" height="35" /></a>
+          </div>
         </div>
-        <div class="social-icons">
-          <a href="#"><img src="./assets/icons/facebook-solid.svg" width="35" height="35" /></a>
-          <a href="#"><img src="./assets/icons/instagram-solid.svg" width="35" height="35" /></a>
-        </div>
-      </div>
-      <!-- Newsletter Section -->
-      <button class="newsletter-btn text-white w-100 p-4">NEWSLETTER</button>
-      <div class="newsletter-collapse d-flex flex-column align-items-start p-5" id="newsletterNav">
-        <button class="btn-close d-flex align-self-end mb-5 text-white" id="closeNewsletter">
-          <img src="./assets/icons/close-menu.svg" alt="Close" width="40px" height="40px" />
-        </button>
-        <h2 class="text-white my-4">Newsletter</h2>
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="validationDefault01" class="form-label w-100 text-start">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="Enter your name" />
-          </div>
-          <div class="col-md-6">
-            <label for="validationDefault02" class="form-label w-100 text-start">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Enter your surname" required />
-          </div>
-          <div class="col-md-12">
-            <label for="validationDefault03" class="form-label w-100 text-start">Email</label>
-            <input type="email" class="form-control" id="validationDefault03"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required />
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
-              <label class="form-check-label w-100 text-start" for="invalidCheck2">Agree to terms and conditions</label>
+        <!-- Newsletter Section -->
+        <button class="newsletter-btn text-white w-100 p-4">NEWSLETTER</button>
+        <div class="newsletter-collapse d-flex flex-column align-items-start p-5" id="newsletterNav">
+          <button class="btn-close d-flex align-self-end mb-5 text-white" id="closeNewsletter">
+            <img src="assets/icons/close-menu.svg" alt="Close" width="40px" height="40px" />
+          </button>
+          <h2 class="text-white my-4">Newsletter</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="validationDefault01" class="form-label w-100 text-start">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter your name" />
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault02" class="form-label w-100 text-start">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="Enter your surname"
+                required
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="validationDefault03" class="form-label w-100 text-start">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="validationDefault03"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+                <label class="form-check-label w-100 text-start" for="invalidCheck2"
+                  >Agree to terms and conditions</label
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="send-btn text-white text-uppercase" type="submit">Submit form</button>
+            </div>
+          </form>
+          <div class="d-flex justify-content-center w-100">
+            <div id="successMessage" class="alert alert-success mt-3 d-none text-center">
+              La tua iscrizione è stata completata con successo!
             </div>
           </div>
-          <div class="col-12">
-            <button class="send-btn text-white text-uppercase" type="submit">Submit form</button>
-          </div>
-        </form>
-        <div class="d-flex justify-content-center w-100">
-          <div id="successMessage" class="alert alert-success mt-3 d-none text-center">
-            La tua iscrizione è stata completata con successo!
-          </div>
         </div>
+        <!-- Copyright -->
+        <p class="text-start">Tutti i diritti riservati, Copyright &copy; 2024 Atelier Alchimia</p>
       </div>
-      <!-- Copyright -->
-      <p class="text-start">Tutti i diritti riservati, Copyright &copy; 2024 Atelier Alchimia</p>
-    </div>
-  </footer>
-  <!-- jQuery -->
-  <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <!-- Bootstrap Dependencies -->
-  <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <!-- Custom Scripts -->
-  <script defer src="./js/script.js"></script>
-</body>
+    </footer>
+    <!-- Jquery Dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom Scripts -->
+    <script defer src="./js/script.js"></script>
+  </body>
 </html>

@@ -64,25 +64,46 @@ $(document).ready(function () {
     $(window).scroll(function () {
       $(".navbar").toggleClass("scrolled", $(this).scrollTop() > 50);
     });
-  });
   
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.newsletter-collapse form');
-    const successMessage = document.getElementById('successMessage');
+      // Project modal functionality
+      if (document.getElementById("imageModal")) {
+        const imageModal = new bootstrap.Modal("#imageModal", {
+          backdrop: true,
+          keyboard: true,
+          focus: true,
+        });
+
+        $(".project-item img").click(function () {
+          $("#modalImage").attr("src", $(this).attr("src"));
+          $("#modalTitle").text($(this).attr("alt"));
+          imageModal.show();
+        });
+      }
+
+      // Modal body class handling
+      $("#imageModal")
+        .on("show.bs.modal", function () {
+          $("body").addClass("modal-open");
+        })
+        .on("hidden.bs.modal", function () {
+          $("body").removeClass("modal-open");
+        });
+
+      // Newsletter form handling
+      const $form = $(".newsletter-collapse form");
+      const $successMessage = $("#successMessage");
+
+      $form.on("submit", function (e) {
+        e.preventDefault();
+
+        $successMessage.removeClass("d-none");
+        this.reset();
+
+        setTimeout(() => {
+          $successMessage.addClass("d-none");
+        }, 5000);
+      });
   
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      successMessage.classList.remove('d-none');
-      form.reset();
-      
-      setTimeout(() => {
-        successMessage.classList.add('d-none');
-      }, 5000);
-    });
-
-
-
     // CAROUSEL SLICK
     $(".carousel-slick").slick({
       arrows: false,

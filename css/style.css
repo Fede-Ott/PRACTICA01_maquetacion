@@ -169,11 +169,11 @@ button {
 
 
   /*STYLE DESIGNER*/
-  .grid-item {
+  .designer-item {
     height: 300px;
   }
   
-  .grid-item img {
+  .designer-item img {
     object-fit: cover;
   }
   
@@ -189,11 +189,6 @@ button {
   .designer-box:hover .designer-info {
     opacity: 1;
   }
-  
-  .dropdown-item:hover{
-    background-color: transparent !important;
-  }
-  
   
 
   /* Responsive Styles */
@@ -232,6 +227,14 @@ button {
 
   .carousel-slick {
     margin-top: 0rem;
+  }
+
+  .designer-info {
+    opacity: 1;
+  }
+
+  .designer-info h2 {
+    font-size: 1rem;
   }
 }
 
