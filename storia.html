@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alchimia - Home</title>
+    <meta
+      name="description"
+      content="Atelier Alchimia - Design studio in Milan specializing in architecture, sculpture and applied arts"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/Style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header: Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-light fixed-top w-100">
+        <!-- Logo -->
+        <a href="Index.html">
+          <img src="./assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="navbar-toggler border-0 hamburger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="./assets/icons/menu.svg" alt="Menu" width="40px" height="40px" />
+        </button>
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse d-flex flex-column align-items-start p-5" id="navbarNav">
+          <!-- Close Button for Mobile -->
+          <button
+            class="btn-close d-flex align-self-end mb-5 text-white me-5"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Close"
+          >
+            <img src="./assets/icons/close-menu.svg" alt="Close" width="40px" height="40px" />
+          </button>
+          <!-- Navigation Links -->
+          <ul class="navbar-nav align-items-start">
+            <!-- Progetti Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white text-uppercase dropdown-toggle no-droparrow"
+                id="progettiDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <h1>Progetti</h1>
+              </a>
+              <ul class="dropdown-menu bg-transparent" aria-labelledby="progettiDropdown">
+                <li>
+                  <a class="nav-link text-white text-uppercase" href="progetti.html#design">Design</a>
+                </li>
+                <li><a class="nav-link text-white text-uppercase" href="progetti.html#disegni">Disegni</a></li>
+                <li>
+                  <a class="nav-link text-white text-uppercase" href="progetti.html#allestimenti">Allestimenti</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Designer Link -->
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="designer.html">
+                <h1>Designer</h1>
+              </a>
+            </li>
+            <!-- Storia Link -->
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="storia.html">
+                <h1>Storia</h1>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Footer Section -->
+    <footer class="footer text-white p-5">
+      <div class="container align-items-start d-flex flex-column gap-5">
+        <!-- Contact Information -->
+        <div class="d-flex flex-column flex-lg-row justify-content-between w-100" style="height: fit-content">
+          <div>
+            <h2 class="mb-3 text-start">ATELIER ALCHIMIA</h2>
+            <p class="text-start mb-0">
+              Via Monte Napoleone 12, 20121, Milano, Italy<br />
+              <a href="mailto:info@atelierdesign.it" class="text-white" style="text-decoration: none"
+                >info@atelierdesign.it</a
+              >
+              |
+              <a href="mailto:guerrieroalessandro@gmail.com" class="text-white" style="text-decoration: underline"
+                >guerrieroalessandro@gmail.com</a
+              >
+              <br />
+              <span>+39 02 12345678</span>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><img src="./assets/icons/facebook-solid.svg" width="35" height="35" /></a>
+            <a href="#"><img src="./assets/icons/instagram-solid.svg" width="35" height="35" /></a>
+          </div>
+        </div>
+        <!-- Newsletter Section -->
+        <button class="newsletter-btn text-white w-100 p-4">NEWSLETTER</button>
+        <div class="newsletter-collapse d-flex flex-column align-items-start p-5" id="newsletterNav">
+          <button class="btn-close d-flex align-self-end mb-5 text-white" id="closeNewsletter">
+            <img src="./assets/icons/close-menu.svg" alt="Close" width="40px" height="40px" />
+          </button>
+          <h2 class="text-white my-4">Newsletter</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="validationDefault01" class="form-label w-100 text-start">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="Enter your name" />
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault02" class="form-label w-100 text-start">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="Enter your surname"
+                required
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="validationDefault03" class="form-label w-100 text-start">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="validationDefault03"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+                <label class="form-check-label w-100 text-start" for="invalidCheck2"
+                  >Agree to terms and conditions</label
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="send-btn text-white text-uppercase" type="submit">Submit form</button>
+            </div>
+          </form>
+          <div class="d-flex justify-content-center w-100">
+            <div id="successMessage" class="alert alert-success mt-3 d-none text-center">
+              La tua iscrizione è stata completata con successo!
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <p class="text-start">Tutti i diritti riservati, Copyright &copy; 2024 Atelier Alchimia</p>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="./js/Script.js"></script>
+  </body>
+</html>
