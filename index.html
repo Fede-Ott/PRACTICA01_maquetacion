@@ -9,12 +9,14 @@
           content="Atelier Alchimia - Design studio in Milan specializing in architecture, sculpture and applied arts"
         />
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
         <!-- Bootstrap e Slick -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +30,7 @@
     <header>
       <nav class="navbar navbar-light fixed-top w-100">
         <!-- Logo -->
-        <a href="index.html">
+        <a href="./index.html">
           <img src="./assets/icons/logo-alchimia.png" alt="Alchimia" width="100px" height="40px" />
         </a>
         <!-- Mobile Menu Toggle Button -->
@@ -70,23 +72,23 @@
               </a>
               <ul class="dropdown-menu bg-transparent" aria-labelledby="progettiDropdown">
                 <li>
-                  <a class="nav-link text-white text-uppercase" href="progetti.html#design">Design</a>
+                  <a class="nav-link text-white text-uppercase" href="./progetti.html#design">Design</a>
                 </li>
-                <li><a class="nav-link text-white text-uppercase" href="progetti.html#disegni">Disegni</a></li>
+                <li><a class="nav-link text-white text-uppercase" href="./progetti.html#disegni">Disegni</a></li>
                 <li>
-                  <a class="nav-link text-white text-uppercase" href="progetti.html#allestimenti">Allestimenti</a>
+                  <a class="nav-link text-white text-uppercase" href="./progetti.html#allestimenti">Allestimenti</a>
                 </li>
               </ul>
             </li>
             <!-- Designer Link -->
             <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="designer.html">
+              <a class="nav-link text-white text-uppercase" href="./designer.html">
                 <h1>Designer</h1>
               </a>
             </li>
             <!-- Storia Link -->
             <li class="nav-item">
-              <a class="nav-link text-white text-uppercase" href="storia.html">
+              <a class="nav-link text-white text-uppercase" href="./storia.html">
                 <h1>Storia</h1>
               </a>
             </li>
@@ -99,7 +101,7 @@
     <main>
         <!-- Hero Section -->
         <div class="position-relative w-100 vh-100 mobile-hero">
-          <img src="assets/images/bg-armadio.webp" class="position-absolute w-100" style="bottom: 0" />
+          <img src="./assets/images/bg-armadio.webp" class="position-absolute w-100" style="bottom: 0" />
         </div>
         <!-- First Quote Section -->
         <section class="d-flex flex-column align-items-center justify-content-center vh-100 bg-black">
@@ -107,7 +109,7 @@
           <div class="quote-content d-flex flex-column">
             <img src="./assets/icons/open-mark.svg" alt="Open Mark" width="40px" height="40px" />
             <div class="d-flex flex-column p-5">
-              <p class="text-uppercase text-white">
+              <p class="text-uppercase text-white" data-aos="fade-up">
                 Per Alchimia non bisogna mai sapere se si sta facendo scultura, architettura, pittura, arte applicata,
                 teatro o altro ancora. Il progetto agisce ambiguamente al di fuori del progetto stesso, in uno stato di
                 spreco, di indifferenza disciplinare, dimensionale e concettuale: il progetto è solo ginnastica del
@@ -179,14 +181,14 @@
         </div>
       </section>
       <!-- Pattern Divider -->
-      <img src="assets/images/pattern2.webp" alt="Pattern 2" class="pattern" />
+      <img src="./assets/images/pattern2.webp" alt="Pattern 2" class="pattern" />
       <!-- Second Quote Section -->
       <section class="d-flex flex-column align-items-center justify-content-center vh-100 bg-black">
         <!-- Quote Content -->
         <div class="quote-content d-flex flex-column">
-          <img src="assets/icons/open-mark.svg" alt="Open Mark" width="40px" height="40px" />
+          <img src="./assets/icons/open-mark.svg" alt="Open Mark" width="40px" height="40px" />
           <div class="d-flex flex-column p-5">
-            <p class="text-uppercase text-white">
+            <p class="text-uppercase text-white" data-aos="fade-up">
               Nel &#39;76 nasce Alchimia, soprattutto come nome. Nasce la parola alchimia in contraddizione con la
               parola chimica, che &#232; una parola molto pi&#249; razionale, matematica, precisa funzionalista. Invece
               la parola alchimia &#232; esattamente l&#39;opposto, &#232; quella che contiene la magia, l&#39;insolito,
@@ -310,6 +312,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Slick Carousel -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Custom Scripts -->
     <script src="./js/script.js"></script>
 </body>
