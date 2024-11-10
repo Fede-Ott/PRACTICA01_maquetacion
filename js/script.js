@@ -80,14 +80,20 @@ $(document).ready(function () {
         });
       }
 
-      // Modal body class handling
-      $("#imageModal")
-        .on("show.bs.modal", function () {
-          $("body").addClass("modal-open");
-        })
-        .on("hidden.bs.modal", function () {
-          $("body").removeClass("modal-open");
-        });
+  // Modal body class handling
+  let scrollPosition = 0;
+
+  $('#imageModal').on('show.bs.modal', function () {
+    scrollPosition = window.pageYOffset;
+    $('body').css('top', `-${scrollPosition}px`);
+    $('body').addClass('modal-open');
+  });
+
+  $('#imageModal').on('hidden.bs.modal', function () {
+    $('body').removeClass('modal-open');
+    $('body').css('top', '');
+    window.scrollTo(0, scrollPosition);
+  });
 
       // Newsletter form handling
       const $form = $(".newsletter-collapse form");
