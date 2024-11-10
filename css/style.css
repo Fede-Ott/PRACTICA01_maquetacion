@@ -17,6 +17,7 @@ body {
     overflow: hidden;
   }
 
+
 /* Header */
 .navbar {
   padding: 2rem 7.25rem !important;
@@ -104,13 +105,17 @@ button {
   
   .quote-content {
     font-size: 2rem;
-    max-width: 800px;
+    max-width: 1200px;
   }
   
   .quote-content p {
     font-size: 1em;
   }
 
+  /* Storia page */
+.storia-title {
+  font-size: 4rem;
+}
 
 /* Carousel and overlay elements */
 .pattern {
@@ -169,6 +174,9 @@ button {
 
 
   /*STYLE DESIGNER*/
+  .designer-title{
+    font-size: 4rem;
+  }
   .designer-item {
     height: 300px;
   }
@@ -299,8 +307,24 @@ button {
     font-size: 1rem;
   }
 
+  .storia-title {
+    font-size: 3rem;
+  }
+
+  .designer-title{
+    font-size: 3rem;
+  }
+
   .vertical-text {
     font-size: 1em;
+  }
+
+  .text-uppercase.text-black.text-center.mb-5 {
+    display: block;
+  }
+
+  .text-white.text-uppercase.align-self-start {
+    margin-left: 1rem;
   }
 
   .carousel-item {
