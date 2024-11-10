@@ -117,6 +117,28 @@ button {
   font-size: 4rem;
 }
 
+/* Progetti page */
+.project-title img {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.project-title img:hover {
+  opacity: 0.8;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+#modalTitle {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  font-size: 1.5rem;
+  color: #f7e987;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* Carousel and overlay elements */
 .pattern {
     width: 100%;
