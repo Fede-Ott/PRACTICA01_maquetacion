@@ -118,6 +118,10 @@ button {
 }
 
 /* Progetti page */
+.progetti-title{
+  font-size: 4rem;
+}
+
 .project-title img {
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -337,6 +341,10 @@ button {
     font-size: 3rem;
   }
 
+  .progetti-title{
+    font-size: 3rem;
+  }
+  
   .vertical-text {
     font-size: 1em;
   }
